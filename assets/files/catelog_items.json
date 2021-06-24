@@ -6,7 +6,7 @@
             "desc": "Apple iPhone 12th Genereation",
             "price": 999,
             "color": "#33505a",
-            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-12-pro-family-hero?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604021663000"
+            "image": "https://pngimg.com/uploads/iphone_12/iphone_12_PNG18.png"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "desc": "Samsung flagship devie",
             "price": 1499,
             "color": "#00ac51",
-            "image": "https://images.samsung.com/in/smartphones/galaxy-z-fold2/images/galaxy-z-fold2-share-image.jpg"
+            "image": "https://www.citypng.com/public/uploads/preview/-1159900682093p23d3ugi.png"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "desc": "Apple Watch 6th Genereation",
             "price": 499,
             "color": "#e0bfae",
-            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/apple-watch-6s-202009?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1599936770000"
+            "image": "https://img.favpng.com/25/17/21/apple-watch-series-3-iphone-6-apple-watch-series-2-png-favpng-SNbJFWEjbeWwWAsPQtyrujnsa.jpg"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "desc": "Fossil Gen 5 Smart Watch",
             "price": 399,
             "color": "#544ee4",
-            "image": "https://cdn1.smartprix.com/rx-i1f0i0hnU-w1200-h1200/fossil-gen-5-smartwa.jpg"
+            "image": "https://banner2.cleanpng.com/20180921/ttj/kisspng-fossil-q-explorist-gen-3-fossil-q-venture-gen-3-sm-smartwatch-fossil-gen-3-q-explorist-navy-gis-t-5ba515d508d601.3171660815375456850362.jpg"
         },
         {
             "id": 5,
