@@ -51,10 +51,7 @@ class CatelogItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              catelog.name.text.medium
-                  .color(MyThemes.darkBluishColor)
-                  .bold
-                  .make(),
+              catelog.name.text.medium.color(context.accentColor).bold.make(),
               catelog.desc.text
                   .textStyle(context.captionStyle as TextStyle)
                   .make(),
@@ -67,11 +64,11 @@ class CatelogItem extends StatelessWidget {
                   ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(MyThemes.darkBluishColor),
+                          MaterialStateProperty.all(context.theme.buttonColor),
                       shape: MaterialStateProperty.all(StadiumBorder()),
                     ),
                     onPressed: () {},
-                    child: "Buy".text.make(),
+                    child: "Add to Cart".text.make(),
                   ),
                 ],
               ).pOnly(right: 8),
@@ -79,6 +76,6 @@ class CatelogItem extends StatelessWidget {
           ))
         ],
       ),
-    ).white.roundedLg.square(150).make().py16();
+    ).color(context.cardColor).roundedLg.square(150).make().py16();
   }
 }

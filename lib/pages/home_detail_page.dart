@@ -11,24 +11,24 @@ class DetailsHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyThemes.creamColor,
-      appBar: AppBar(),
+      backgroundColor: context.canvasColor,
+      appBar: AppBar(backgroundColor: Colors.transparent),
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: Vx.m0,
           children: [
-            "\$${catelog.price}".text.bold.xl3.make(),
+            "\$${catelog.price}".text.red800.bold.xl3.make(),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(MyThemes.darkBluishColor),
+                    MaterialStateProperty.all(context.theme.buttonColor),
                 shape: MaterialStateProperty.all(StadiumBorder()),
               ),
               onPressed: () {},
-              child: "Buy".text.xl.make(),
-            ).wh(100, 50),
+              child: "Add to Cart".text.xl.make(),
+            ).wh(130, 50),
           ],
         ).p32(),
       ),
@@ -46,18 +46,27 @@ class DetailsHomePage extends StatelessWidget {
                 edge: VxEdge.TOP,
                 arcType: VxArcType.CONVEY,
                 child: Container(
-                  color: Colors.white,
+                  color: context.cardColor,
                   width: context.screenWidth,
-                  child: Column(
-                    children: [
-                      catelog.name.text.bold.xl3
-                          .color(MyThemes.darkBluishColor)
-                          .make(),
-                      catelog.desc.text.lg
-                          .textStyle(context.captionStyle as TextStyle)
-                          .make(),
-                    ],
-                  ).py32(),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        catelog.name.text.bold.xl3
+                            .color(context.accentColor)
+                            .make(),
+                        catelog.desc.text.lg
+                            .textStyle(context.captionStyle as TextStyle)
+                            .make(),
+                        10.heightBox,
+                        "Sanctus voluptua dolor sit ipsum vero sea vero, sadipscing duo sanctus dolore no dolor dolores diam ut, tempor sadipscing lorem lorem vero dolor clita. Ut voluptua eos et et consetetur. Amet dolore at duo invidunt dolore amet vero dolores. Accusam erat sadipscing magna voluptua diam takimata. Erat elitr ut ipsum."
+                            .text
+                            .textStyle(context.captionStyle as TextStyle)
+                            .align(TextAlign.justify)
+                            .make()
+                            .p16(),
+                      ],
+                    ).py32(),
+                  ),
                 ),
               ),
             ),

@@ -8,7 +8,7 @@ class CatelogHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        "Catelog App".text.xl5.bold.color(MyThemes.darkBluishColor).make(),
+        "Catelog App".text.xl5.bold.color(context.accentColor).make(),
         "Trending Products".text.xl2.make(),
       ],
     );
