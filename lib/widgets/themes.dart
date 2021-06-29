@@ -28,12 +28,12 @@ class MyThemes {
         accentColor: Colors.white,
         fontFamily: GoogleFonts.poppins().fontFamily,
         appBarTheme: AppBarTheme(
-          color: Colors.white,
+          color: Colors.black,
           elevation: 0,
           iconTheme: IconThemeData(
             color: Colors.white,
           ),
-          textTheme: Theme.of(context).textTheme,
+          textTheme: Theme.of(context).textTheme.copyWith(headline6: context.textTheme.headline6!.copyWith(color: Colors.white)),
         ),
       );
 
